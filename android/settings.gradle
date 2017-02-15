@@ -1,0 +1,3 @@
+rootProject.name = 'iLobby'
+
+include ':app'
