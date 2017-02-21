@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -11,6 +5,9 @@ import {
   Text,
   View
 } from 'react-native';
+import {
+  Button
+} from 'react-native-elements'
 
 export default class iLobby extends Component {
   render() {
@@ -26,6 +23,10 @@ export default class iLobby extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <Button
+          raised
+          icon={{name: 'cached'}}
+          title='RAISED WITH ICON' />
       </View>
     );
   }
