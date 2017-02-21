@@ -11,14 +11,19 @@ export default class LoginForm extends Component {
       <View style={styles.container}>
         <FormLabel>Username</FormLabel>
         <FormInput
-          containerStyle={styles.userContainer} 
-          inputStyle={styles.userInput}
-          placeholder='Please enter your username'
+          containerStyle={styles.loginFields} 
+          placeholder='Please enter your username...'
+          />
+        <FormLabel>Password</FormLabel>
+        <FormInput
+          containerStyle={styles.loginFields} 
+          placeholder='Please enter your password...'
           />
         <Button
           raised
-          icon={{name: 'cached'}}
-          title='Login' />
+          icon={{name: 'done'}}
+          title='Login'
+          backgroundColor='steelblue'/>
       </View>
     );
   }
@@ -28,12 +33,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-  userContainer: {
+  loginFields: {
     width: 250, 
-    height: 50, 
-    borderWidth: 1
+    height: 40, 
+    borderBottomWidth: 1,
+    marginBottom: 20
   },
-  userInput: {
-    textAlign: 'center'
-  }
 });
