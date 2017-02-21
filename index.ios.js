@@ -1,32 +1,19 @@
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-import {
-  Button
-} from 'react-native-elements'
+import React, { Component } from 'react'
+import { AppRegistry, StyleSheet, View } from 'react-native'
+import { Text } from 'react-native-elements'
+import LoginForm from './app/components/LoginForm'
 
 export default class iLobby extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
+        <Text h1 style={styles.welcome}>
+          iLobby
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+        <Text h4 style={styles.title}>
+          Crowdfunding Legislation
         </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-        <Button
-          raised
-          icon={{name: 'cached'}}
-          title='RAISED WITH ICON' />
+        <LoginForm/>
       </View>
     );
   }
@@ -35,16 +22,15 @@ export default class iLobby extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F5FCFF'
   },
   welcome: {
-    fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 20
   },
-  instructions: {
+  title: {
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
