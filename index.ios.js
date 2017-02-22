@@ -1,40 +1,4 @@
-import React, { Component } from 'react'
-import { AppRegistry, StyleSheet, View } from 'react-native'
-import { Text } from 'react-native-elements'
-import LoginForm from './app/components/LoginForm'
+import { AppRegistry } from 'react-native'
+import App from './app/containers/App'
 
-export default class iLobby extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text h1 style={styles.welcome}>
-          iLobby
-        </Text>
-        <Text h4 style={styles.title}>
-          Crowdfunding Legislation
-        </Text>
-        <LoginForm/>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    textAlign: 'center',
-    margin: 20
-  },
-  title: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('iLobby', () => iLobby);
+AppRegistry.registerComponent('iLobby', () => App);

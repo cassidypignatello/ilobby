@@ -23,7 +23,8 @@ export default class LoginForm extends Component {
           raised
           icon={{name: 'done'}}
           title='Login'
-          backgroundColor='steelblue'/>
+          backgroundColor='steelblue'
+          />
       </View>
     );
   }
