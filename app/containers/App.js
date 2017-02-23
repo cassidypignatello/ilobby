@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { Text } from 'react-native-elements'
 import LoginForm from '../components/LoginForm'
+import HomeButtons from '../components/HomeButtons'
 
 export default class iLobby extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class iLobby extends Component {
           Crowdfunding Legislation
         </Text>
         <LoginForm/>
+        <HomeButtons/>
       </View>
     );
   }
@@ -35,5 +37,5 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
-  },
+  }
 });
