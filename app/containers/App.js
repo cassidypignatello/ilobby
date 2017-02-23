@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native'
 import { Text } from 'react-native-elements'
 import LoginForm from '../components/LoginForm'
 import HomeButtons from '../components/HomeButtons'
+import TabBar from '../components/TabBar'
 
 export default class iLobby extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class iLobby extends Component {
         </Text>
         <LoginForm/>
         <HomeButtons/>
+        <TabBar/>
       </View>
     );
   }
@@ -25,9 +27,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-start',
-    alignItems: 'center',
+    // alignItems: 'center',
     backgroundColor: '#F5FCFF',
-    padding: 10
+    // padding: 10
   },
   welcome: {
     textAlign: 'center',
