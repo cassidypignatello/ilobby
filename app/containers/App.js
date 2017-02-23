@@ -9,14 +9,14 @@ export default class iLobby extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text h1 style={styles.welcome}>
-          iLobby
-        </Text>
-        <Text h4 style={styles.title}>
-          Crowdfunding Legislation
-        </Text>
-        <LoginForm/>
-        <HomeButtons/>
+          <Text h1 style={styles.welcome}>
+            iLobby
+          </Text>
+          <Text h4 style={styles.title}>
+            Crowdfunding Legislation
+          </Text>
+          <LoginForm/>
+          <HomeButtons/>  
         <TabBar/>
       </View>
     );

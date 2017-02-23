@@ -37,8 +37,8 @@ const styles = StyleSheet.create({
   },
   loginFields: {
     width: 250, 
-    height: 40, 
+    height: 40,
     borderBottomWidth: 1,
-    marginBottom: 20
+    marginBottom: 20,
   },
 });
