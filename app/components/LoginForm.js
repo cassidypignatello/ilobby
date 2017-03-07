@@ -13,18 +13,18 @@ export default class LoginForm extends Component {
         <FormInput
           containerStyle={styles.loginFields} 
           placeholder='Please enter your username...'
-          />
+        />
         <FormLabel>Password</FormLabel>
         <FormInput
           containerStyle={styles.loginFields} 
           placeholder='Please enter your password...'
-          />
+        />
         <Button
           raised
           icon={{name: 'done'}}
           title='Login'
           backgroundColor='steelblue'
-          />
+        />
       </View>
     );
   }

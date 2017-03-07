@@ -1,14 +1,18 @@
 import React, { Component, PropTypes } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { Navigator, StyleSheet, View } from 'react-native'
 import { Text } from 'react-native-elements'
 import LoginForm from '../components/LoginForm'
 import HomeButtons from '../components/HomeButtons'
 import TabBar from '../components/TabBar'
 
 export default class iLobby extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
+  renderScene(route, navigator) {
+    if (route.name == 'Login') {
+      return (
+        <View 
+          navigator={navigator} 
+          style={styles.container}
+        >
           <Text h1 style={styles.welcome}>
             iLobby
           </Text>
@@ -17,8 +21,19 @@ export default class iLobby extends Component {
           </Text>
           <LoginForm/>
           <HomeButtons/>  
-        <TabBar/>
-      </View>
+          <TabBar/>
+        </View>
+      );
+    }
+  }
+
+  render() {
+    return (
+      <Navigator
+        style={{flex: 1}}
+        initialRoute={{name: 'Login'}}
+        renderScene={ this.renderScene} 
+      />
     );
   }
 }
