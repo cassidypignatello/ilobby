@@ -4,6 +4,7 @@ import { Text } from 'react-native-elements'
 import LoginForm from '../components/LoginForm'
 import HomeButtons from '../components/HomeButtons'
 import TabBar from '../components/TabBar'
+import About from '../components/About'
 
 export default class iLobby extends Component {
   renderScene(route, navigator) {
@@ -25,13 +26,16 @@ export default class iLobby extends Component {
         </View>
       );
     }
+    if (route.name == 'About') {
+      return <About navigator={navigator} />
+    }
   }
 
   render() {
     return (
       <Navigator
         style={{flex: 1}}
-        initialRoute={{name: 'Login'}}
+        initialRoute={{name: 'About'}}
         renderScene={ this.renderScene} 
       />
     );
