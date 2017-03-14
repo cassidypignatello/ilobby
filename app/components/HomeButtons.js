@@ -1,8 +1,10 @@
 'use strict';
 
 import React, { Component, PropTypes } from 'react'
-import { StyleSheet, View } from 'react-native';
-import { Button } from 'react-native-elements';
+import { StyleSheet, View } from 'react-native'
+import Router from 'react-native-simple-router'
+import { Button } from 'react-native-elements'
+import About from './About'
 
 export default class HomeButtons extends Component {
   render() {
@@ -13,6 +15,7 @@ export default class HomeButtons extends Component {
           buttonStyle={styles.button}
           icon={{name: 'people'}}
           title="Who We Are"
+          {...this.props}
         />
         <Button
           raised
