@@ -1,4 +1,3 @@
-'use strict';
 import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { Tabs, Tab, Icon } from 'react-native-elements'

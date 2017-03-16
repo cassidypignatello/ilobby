@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { Component, PropTypes } from 'react'
 import { StyleSheet, View } from 'react-native';
 import { Button } from 'react-native-elements';
