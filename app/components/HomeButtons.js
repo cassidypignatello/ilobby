@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
-import { StyleSheet, View } from 'react-native';
-import { Button } from 'react-native-elements';
+import { StyleSheet, View } from 'react-native'
+import { Button } from 'react-native-elements'
+import { Actions } from 'react-native-router-flux'
 
 export default class HomeButtons extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class HomeButtons extends Component {
           buttonStyle={styles.button}
           icon={{name: 'people'}}
           title="Who We Are"
+          onPress={Actions.about}
         />
         <Button
           raised
