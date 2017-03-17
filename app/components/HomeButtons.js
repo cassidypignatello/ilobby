@@ -19,6 +19,7 @@ export default class HomeButtons extends Component {
           buttonStyle={styles.button}
           icon={{name: 'info'}}
           title="Why You Should Care"
+          onPress={Actions.info}
         />
         <Button
           raised
