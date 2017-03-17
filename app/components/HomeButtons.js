@@ -26,6 +26,7 @@ export default class HomeButtons extends Component {
           buttonStyle={styles.button}
           icon={{name: 'help'}}
           title="Terms of Service"
+          onPress={Actions.terms}
         />
       </View>
     );
