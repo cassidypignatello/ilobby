@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { Text } from 'react-native-elements'
+import { Actions } from 'react-native-router-flux'
 import LoginForm from '../components/LoginForm'
 import HomeButtons from '../components/HomeButtons'
-import TabBar from '../components/TabBar'
+// import TabBar from '../components/TabBar'
 
 export default class Login extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class Login extends Component {
           </Text>
           <LoginForm/>
           <HomeButtons/>  
-        <TabBar/>
+          {/* <TabBar/> */}
       </View>
     );
   }
