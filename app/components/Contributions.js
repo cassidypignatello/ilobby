@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { Text } from 'react-native-elements'
 
-export default class Bills extends Component {
+export default class Contributions extends Component {
   render() {
-    return (
+    return(
       <View style={styles.container}>
-        <Text>Bills are displayed here!</Text>
+        <Text>Contributions data is displayed here!</Text>
       </View>
     );
   }

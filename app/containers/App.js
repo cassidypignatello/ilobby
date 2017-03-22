@@ -6,6 +6,8 @@ import About from '../components/About'
 import Info from '../components/Info'
 import Terms from '../components/Terms'
 import Bills from '../components/Bills'
+import Representatives from '../components/Representatives'
+import Contributions from '../components/Contributions'
 import TabIcon from '../components/TabIcon'
 
 const styles = StyleSheet.create({
@@ -18,27 +20,43 @@ const styles = StyleSheet.create({
 });
 
 const scenes = Actions.create(
-  <Scene key="root">
-    <Scene key="tabbar" tabs={true} hideNavBar tabBarStyle={styles.tabBar}>
+  <Scene key='root'>
+    <Scene key='tabbar' tabs={true} hideNavBar tabBarStyle={styles.tabBar}>
       <Scene 
-        key="billsTab"  
-        title="Bills" 
-        icon={TabIcon} 
-        style={{paddingTop: 64}}
+        key='billsTab'  
+        title='Bills' 
+        icon={TabIcon}
+        iconName='file-text'
       >
-        <Scene key="bills" component={Bills} title="Bills" onPress={() => {Actions.bills}}/>
+        <Scene key='bills' component={Bills} title='Bills' onPress={() => {Actions.bills}}/>
       </Scene>
       <Scene 
-        key="loginTab"  
-        title="Login"
+        key='repsTab'  
+        title='Representatives' 
         icon={TabIcon}
-        style={{paddingTop: 64}}
+        iconName='bullhorn'
+      >
+        <Scene key='representatives' component={Representatives} title='Representatives' onPress={() => {Actions.representatives}}/>
+      </Scene>
+      <Scene 
+        key='contributionsTab'  
+        title='Contributions' 
+        icon={TabIcon}
+        iconName='usd'
+      >
+        <Scene key='contributions' component={Contributions} title='Contributions' onPress={() => {Actions.contributions}}/>
+      </Scene>
+      <Scene 
+        key='loginTab'  
+        title='Login'
+        icon={TabIcon}
+        iconName='sign-in'
         initial={true}
       >
-        <Scene key="login" component={Login} title="iLobby" onPress={() => {Actions.login}}/>
-        <Scene key="about" component={About} title="Who We Are" />
-        <Scene key="info" component={Info} title="Why You Should Care" />
-        <Scene key="terms" component={Terms} title="Terms of Service" />
+        <Scene key='login' component={Login} title='iLobby' onPress={() => {Actions.login}}/>
+        <Scene key='about' component={About} title='Who We Are' />
+        <Scene key='info' component={Info} title='Why You Should Care' />
+        <Scene key='terms' component={Terms} title='Terms of Service' />
       </Scene>
     </Scene>
   </Scene>
