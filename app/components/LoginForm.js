@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { Component } from 'react'
 import { StyleSheet, View, } from 'react-native'
 import { Button, FormLabel, FormInput } from 'react-native-elements'
@@ -13,18 +11,26 @@ export default class LoginForm extends Component {
         <FormInput
           containerStyle={styles.loginFields} 
           placeholder='Please enter your username...'
-          />
+        />
         <FormLabel>Password</FormLabel>
         <FormInput
           containerStyle={styles.loginFields} 
           placeholder='Please enter your password...'
-          />
+        />
         <Button
           raised
           icon={{name: 'done'}}
           title='Login'
           backgroundColor='steelblue'
-          />
+          buttonStyle={{marginBottom: 15}}
+        />
+        <Button
+          raised
+          icon={{name: 'user-plus', type: 'font-awesome'}}
+          title='Sign Up'
+          backgroundColor='red'
+          buttonStyle={{marginBottom: 15}}
+        />
       </View>
     );
   }
