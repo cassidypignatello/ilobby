@@ -10,12 +10,12 @@ const list = [
   },
   {
     name: 'New York Senate Bill S1747',
-    avatar_url: 'https://unsplash.it/128/?random',
+    avatar_url: 'https://unsplash.it/200/?random',
     subtitle: 'Marijuana Regulation and Taxation Act'
   },
   {
     name: 'North Carolina House Bill 2',
-    avatar_url: 'https://unsplash.it/128/?random',
+    avatar_url: 'https://unsplash.it/150/?random',
     subtitle: 'Public Facilities Privacy & Security Act'
   }
 ]
