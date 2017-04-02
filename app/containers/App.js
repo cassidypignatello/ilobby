@@ -6,6 +6,7 @@ import About from '../components/About'
 import Info from '../components/Info'
 import Terms from '../components/Terms'
 import Bills from '../components/Bills'
+import Bill from '../components/Bill'
 import Representatives from '../components/Representatives'
 import Contributions from '../components/Contributions'
 import TabIcon from '../components/TabIcon'
@@ -57,6 +58,7 @@ const scenes = Actions.create(
         <Scene key='about' component={About} title='Who We Are' />
         <Scene key='info' component={Info} title='Why You Should Care' />
         <Scene key='terms' component={Terms} title='Terms of Service' />
+        <Scene key='bill' component={Bill} title='Bill' />
       </Scene>
     </Scene>
   </Scene>

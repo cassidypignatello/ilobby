@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { ScrollView, StyleSheet, View } from 'react-native'
+import { Actions } from 'react-native-router-flux'
 import { Button, Card, List, ListItem, Text } from 'react-native-elements'
+import Bill from './Bill'
 
 const list = [
   {
@@ -22,6 +24,7 @@ const list = [
 
 export default class Bills extends Component {
   render() {
+    
     return (
       <ScrollView style={styles.container}>
         {
@@ -41,6 +44,7 @@ export default class Bills extends Component {
                 backgroundColor='#03A9F4'
                 buttonStyle={styles.cardButton}
                 title='VIEW DETAILS'
+                onPress={Actions.bill}
               />
             </Card>
           ))
