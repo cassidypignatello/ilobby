@@ -29,7 +29,8 @@ const scenes = Actions.create(
         icon={TabIcon}
         iconName='file-text'
       >
-        <Scene key='bills' component={Bills} title='Bills' onPress={() => {Actions.bills}}/>
+        <Scene key='bills' component={Bills} title='Bills' onPress={() => {Actions.bills}}>
+        </Scene>
       </Scene>
       <Scene 
         key='repsTab'  

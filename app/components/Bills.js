@@ -57,7 +57,7 @@ export default class Bills extends Component {
 const styles = StyleSheet.create({
   container: {
     marginTop: 63, 
-    marginBottom: 20
+    marginBottom: 60
   },
   cardButton: {
     borderRadius: 0, 
